@@ -10,7 +10,7 @@
  * https://t.me/TheDarkW3b
  */
 define('FILES_PATH', __DIR__.'/files');
-define('WEBSERVER_BASE_URL', 'file.io');
+define('WEBSERVER_BASE_URL', 'https://synfiles.herokuapp.com/');
 define('FILES_EXPIRE_TIME', 24 * 3600); // in seconds
 
 set_time_limit(0);
@@ -84,7 +84,7 @@ class EventHandler extends \danog\MadelineProto\EventHandler
                 $text = $update['message']['message'];
                 $chat_id = $update['message']['from_id'];
                 if ($text == '/start') {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Hi! please send me any file url or file uploaded in Telegram and I will upload to Telegram as file or generate download link of that file. \n Kindly Join Support Group: @linux_repo', 'reply_to_msg_id' => $message_id]);
+                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Hi! please send me any file url or file uploaded in Telegram and I will upload to Telegram as file or generate download link of that file. \n Devoloper: @synuser', 'reply_to_msg_id' => $message_id]);
 
                     return;
                 }
