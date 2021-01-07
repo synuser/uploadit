@@ -10,7 +10,7 @@
  * https://t.me/TheDarkW3b
  */
 define('FILES_PATH', __DIR__.'/files');
-define('WEBSERVER_BASE_URL', 'https://up.uploadfiles.io/upload');
+define('WEBSERVER_BASE_URL', 'https://srv-store5.gofile.io/uploadFile');
 define('FILES_EXPIRE_TIME', 24 * 3600); // in seconds
 
 set_time_limit(0);
